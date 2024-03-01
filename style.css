@@ -1,0 +1,629 @@
+/* https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    /* position: relative; */
+    background-color: rgb(19,25, 33);
+    height: 60px;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    transition: 1.6s;
+    z-index: 100;
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* layout */
+.container{
+    width: 98%;
+    height: 100%;
+    margin: auto;
+}
+.container-header{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo-container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.logo{
+    width: 120px;
+    height: 50px;
+    background:url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    height: 50px;
+    background-repeat:no-repeat ;
+    background-position-y:-40px ;
+    overflow: hidden;
+}
+
+.dotin{
+    position: relative;
+    margin-left: -10px;
+    margin-top: -8px;
+}
+
+.border-white{
+    padding: 5px;
+    border: 1.5px solid transparent;
+    border-radius: 5%;
+}
+.border-white:hover{
+    border:1px solid white;
+}
+
+/* Address */
+.address-container{
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+.address-container p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.icon-address{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 14px; */
+}
+
+.hello{
+    font-size: 0.8rem;
+    padding-left: 21.9px;
+    color: #ccc;
+}
+.icon-location{
+    margin-right: 7px;
+    margin-bottom: 4px;
+}
+
+/* search-container */
+.search-container{
+    background-color: rgb(246, 190, 87) ;
+    margin-left: 25px;
+    width: 700px;
+    display: flex;
+    border-radius: 5px;
+    height: 40px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.search-container:hover {
+    outline: 2px solid rgb(247, 180, 54);
+}
+
+
+.search-select{
+    width: 60px;
+    border: none;
+    background-color: rgb(222, 220, 220);
+    text-decoration: none;
+}
+.search-select:hover{
+    background-color: rgb(203, 200, 200);
+}
+
+.search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 1rem;
+}
+
+.search-icon{
+    width: 40px;
+    background-color: rgb(247, 180, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Language */
+.language-container{
+    margin-left: 20px;
+}
+
+.language-container p{
+
+    margin-top: 12px;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.language-image{
+    margin-left: 9px;
+    margin-bottom:1px;
+    width: 20px;
+    justify-content: flex-start;
+}
+.language-image img{
+    width: 100%;
+}
+
+/* Login  */
+.login-container{
+    margin-left: 15px ;
+    height: 54px;
+}
+.login-container p{
+    font-size:15px ;
+    margin: 0;
+
+}
+.account{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.return-order-container{
+    width: 77px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+.return-order-container p{
+    margin: 0;
+}
+
+.order{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    width: 70px;
+}
+
+
+/* Cart Container */
+
+.cart-container{ 
+    background:url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    width: 75px;
+    display: block;
+    overflow: hidden;
+    height: 43px;
+    background-position: -218px -337px;
+    margin-left: 20px;
+    
+}
+.cart-container p{
+    font-weight: 900;
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+/* Navigation Bar */
+.cursor{
+    cursor: pointer;
+}
+.nav{
+    height: 40px;
+    background-color: rgb(35, 47, 61);
+    margin: 0;
+}
+
+.container-nav{
+    align-items: center;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.container-nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.container-nav ul li a{
+    font-size: medium;
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+}
+
+.nav-right-image{
+    max-width: 400px;
+    height: 100%;
+}
+.nav-right-image img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+.prime-image{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    color: #000;
+    transition: display 0.3s;
+}
+.prime-image-hover:hover .prime-image{
+    display: block;
+}
+.prime-image img{
+    padding: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Body slider  */
+
+.image-container{
+    position: relative;
+}
+
+.image-list{
+    display: flex;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+.image-item{
+    min-width: 100%;
+    height: 600px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.image-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: scale(1.05); */
+    
+}
+
+/* Slider button */
+.image-btn-container{
+    position: absolute; 
+    top: 22.5%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* .slide-btn-left{
+    background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    background-color: transparent;
+    background-position: 40% 65%;
+}
+.slide-btn-right{
+    background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    background-color: transparent;
+    background-position: 40% 65%;
+}
+.image-btn-container button{
+    height: 40px;
+    width: 40px;
+} */
+
+.slider-btn{
+    border: 2px solid transparent;
+    padding: 100px 20px;
+    font-size: 50px;
+    font-weight: 300;
+    background-color: transparent;
+    color: black;
+}
+.slider-btn:focus{
+    border-color: skyblue;
+    box-shadow: -2px -2px 2px white,
+    2px 2px 2px white;
+    margin: 2px;
+}
+
+/* side bar  */
+.sidebar-container-navigation{
+    padding-top: 60px;;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color:  rgba(0,0,0,0.7);
+    transform: translate(-100%);
+    display: flex;
+    transition: ease-in-out;
+}
+
+.sidebar-show{
+    transform: translate(0%);
+    cursor:pointer;
+}
+
+.sidebar-left-part{
+    background-color: white;
+    width: 360px;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+}
+
+.sidebar-top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding-left: 30px;
+    background-color:  rgb(35, 47, 61);
+}
+
+
+.user-logo{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-position: 42% 80%;
+    background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    margin-top:8px;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.user-logo h2{
+    font-size: larger;
+}
+.nav-hello-signin{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 35px;
+    display: inline;
+    white-space: nowrap;
+    color: white;
+    line-height: 30px;
+}
+
+.sidebar-item{
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: .9px solid #000;
+}
+
+
+.sidebar-item h2{
+    font-size: 22px;
+}
+.sidebar-item p{
+    font-weight: 400;
+}
+
+
+/* .cross-btn{
+
+    width: 30px;
+    height: 30px;
+    background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png");
+    background-position: 58% 67%;
+    margin-top: 13px;
+    background-color: transparent;
+    border:#000;
+} 
+.sidebar-nav-close{
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    z-index: 0;
+} */
+
+#sidebar-nav-close{
+    align-self: flex-start;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color:white;
+    padding: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.sidebar-wrap{
+    height: 93%;
+    width: 100%;
+    overflow: scroll;
+}
+/* Product card container */
+
+.main{
+    position: relative;
+    top: -340px;
+}
+
+.card-product-container{
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(255,255,255,0.5);
+}
+
+.card-product h2{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.card-nested p{
+    margin: 2px;
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    max-height: 36px;
+    line-height: 16px;
+
+}
+
+.card-product-nested-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-nested img{
+    max-width: 128px;
+    height: 102px;
+    object-fit: cover;
+}
+
+.card-product-btn{
+    font-size: 13px;
+    align-self: flex-start;
+    margin: 7px 10px;
+    padding-top: 30px;
+    border: none;
+    background-color: transparent;
+    color: #007185;
+}
+
+.card-product-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Today deal  */
+.todays-deals-container{
+    margin: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+    4px 4px 4px rgba(239, 187, 187, 0.1);
+}
+
+.todays-deals-heading{
+    display: flex;
+    align-items: center;
+    padding: 2px 20px;
+}
+
+.todays-deals-heading a{
+    color: #007185;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.todays-deals-heading a:hover{
+    text-decoration: underline;
+}
+
+.today-deals-product-container{
+    position: relative;
+}
+
+.today-deals-product-list{
+    display: flex;
+}
+
+.today-deals-product-item{
+    min-width: 230px;
+    padding: 30px 10px;
+    padding-left: 40px;
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+
+/* if resolution of all images is not same then use below styling for  .class-name img{. styling  }  */
+.today-deals-product-item img {
+    max-width: 100%;
+    height:180px; 
+    object-fit:contain;
+    background-color: #fcfcfc;
+}
+.discount-container{
+    display: flex;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.discount-container a{
+    padding: 5px 10px;
+    color: #CC0C39;
+    text-decoration: none;
+    font-weight: 600px;
+}
+
+.discount-container a:first-child{
+    background-color: #CC0C39;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 540px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 11px;
+}
+.todays-deals-btn-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-bottom: 6%;
+}
+
+.todays-deals-btn{
+    padding: 30px 10px;
+    font-size: 30px;
+    border-radius: 3px 0 0 3px;
+    background-color: #fff;
+    color: gray;
+    border-width: 1px;
+    border-color:#000
+
+}
+.todays-deals-btn:hover{
+    border-color:#007185;
+    border-width: 2px;
+}
